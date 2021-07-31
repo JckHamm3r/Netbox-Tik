@@ -16,7 +16,7 @@ Line 10 --> Enter the directory that you want the files to be created in.
 
 Line 13 --> Enter your netbox API token, make sure to include "Token" at the beginning of it.
 
-Line 14 --> Enter your netbox URL, the only thing that should change here is "YOURNETBOXURL".
+Line 14 --> Enter your netbox URL, the only thing that should change here is "YOURNETBOXURL.COM".
 
 Line 17 --> Enter the username for your MikroTik devices.
 
