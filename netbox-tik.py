@@ -6,6 +6,9 @@ dtimestamp = datetime.datetime.now().strftime("%b-%d-%Y_%H:%M:%S")
 ### Timestamp date only ###
 timestamp = datetime.datetime.now().strftime("%m-%d-%Y_%H:%M:%S").split("_")[0]
 
+### Main directory for files ###
+main_dir = "/home/scripts/Backups/"
+
 ### Netbox information: Replace token with your Netbox API token and replace YOURNETBOXURL with the url to your instance of Netbox###
 token = 'Token tokentokentokentokentokentokentokentoken'
 nbox_url = 'https://YOURNETBOXURL.com/api/'
@@ -48,7 +51,7 @@ for d in devices:
         lines = stdout.readlines()
         
         ### Create role directory if it doesnt exist ###
-        role_dir = f"/home/scripts/Backups/{d['device_role']['name']}"
+        role_dir = f"{main_dir}{d['device_role']['name']}"
         if not os.path.exists(role_dir):
             os.makedirs(role_dir)
         
@@ -88,8 +91,8 @@ for d in devices:
 
 ### Creates backup_log.csv for all log_msg ###
 df = pd.DataFrame(dev_log)
-path = "/home/scripts/Backups/backup_log.csv"
-if os.path.exists("/home/scripts/Backups/backup_log.csv"):
+path = f"{main_dir}backup_log.csv"
+if os.path.exists(f"{main_dir}backup_log.csv"):
     df.to_csv(path,mode="a",index=False,header=False)
 else:
     df.to_csv(path,index=False)
