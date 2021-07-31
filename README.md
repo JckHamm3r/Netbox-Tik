@@ -21,3 +21,5 @@ Line 14 --> Enter your netbox URL, the only thing that should change here is "YO
 Line 17 --> Enter the username for your MikroTik devices.
 
 Line 18 --> Enter the password for your MikroTik devices.
+
+Line 67 --> Change "30" to the number of days worth of backups that you want to keep.
