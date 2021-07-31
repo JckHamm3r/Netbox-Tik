@@ -6,7 +6,7 @@ dtimestamp = datetime.datetime.now().strftime("%b-%d-%Y_%H:%M:%S")
 ### Timestamp date only ###
 timestamp = datetime.datetime.now().strftime("%m-%d-%Y_%H:%M:%S").split("_")[0]
 
-### Main directory for files ###
+### Main directory for files. Currently setup for linux machines ###
 main_dir = "/home/scripts/Backups/"
 
 ### Netbox information: Replace token with your Netbox API token and replace YOURNETBOXURL with the url to your instance of Netbox###
