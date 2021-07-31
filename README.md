@@ -1,4 +1,4 @@
-# Netbox-Tik.rsc
+# Netbox-Tik
 This tool will create a .rsc file for all of your MikroTik devices that are in Netbox as well as a log file that shows the result for each attempt of pulling the backups.
 
 # Prerequisites
