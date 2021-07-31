@@ -1,2 +1,2 @@
-# Netbox-Tik.rsc
+# Netbox-Tik
 This tool take all of your MikroTik information from Netbox and will create .rsc backup files for each MikroTik device.
