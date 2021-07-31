@@ -11,7 +11,7 @@ main_dir = "/home/scripts/Backups/"
 
 ### Netbox information: Replace token with your Netbox API token and replace YOURNETBOXURL with the url to your instance of Netbox###
 token = 'Token tokentokentokentokentokentokentokentoken'
-nbox_url = 'https://YOURNETBOXURL.com/api/'
+nbox_url = 'https://YOURNETBOXURL.COM/api/'
 
 ### Mikrotik credentials: Enter your username and password for your MikroTike devices ###
 username = "YOURUSERNAME"
