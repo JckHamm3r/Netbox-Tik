@@ -49,13 +49,8 @@ for d in devices:
         ssh.connect(host, port, username, password, look_for_keys=False, timeout=2)
         stdin, stdout, stderr = ssh.exec_command(command)
         lines = stdout.readlines()
-        
-        ### Create role directory if it doesnt exist ###
+
         role_dir = f"{main_dir}{d['device_role']['name']}"
-        if not os.path.exists(role_dir):
-            os.makedirs(role_dir)
-        
-        ### Create device name directory if it doesnt exist ###
         name_dir =f"{role_dir}/{d['name']}"
         if not os.path.exists(name_dir):
             os.makedirs(name_dir)
