@@ -19,7 +19,14 @@ password = "YOURPASSWORD"
 
 ### Function to create log file item ###
 def log_msg(msg):
-    dev_log.append({"Timestamp":dtimestamp,"Address":d['primary_ip']['address'],"Serial Number": srl_num,"Model":model, "Firmware":fw_ver, "Device Name":d['name'],"Role":d['device_role']['name'],"Backup":msg})
+    dev_log.append({"Timestamp":dtimestamp,
+                    "Address":d['primary_ip']['address'],
+                    "Serial Number": srl_num,
+                    "Model":model, 
+                    "Firmware":fw_ver, 
+                    "Device Name":d['name'],
+                    "Role":d['device_role']['name'],
+                    "Backup":msg})
     
 ### Function to get Netbox infromation ###
 def get_netbox(item, token):
